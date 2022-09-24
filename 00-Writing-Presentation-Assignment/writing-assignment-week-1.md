@@ -360,13 +360,14 @@ Dalam pengetahuan pemrograman dasar, kamu akan dikenalkan dengan HTML dan CSS. K
       p     : merupakan selektor,
       color : merupakan property,
       aqua  : merupakan value,
-
-      Selektor menunjuk ke elemen HTML yang ingin kita ubah tampilannya.
-
-      Blok deklarasi berisi satu atau lebih deklarasi yang dipisahkan oleh tanda titik koma.
-
-      Setiap deklarasi menyertakan nama properti CSS dan nilai, dipisahkan oleh titik dua.
-
-      Deklarasi CSS selalu diakhiri dengan tanda titik koma, dan blok deklarasi dikelilingi oleh kurung kurawal.
       ```
+
+      > Selektor menunjuk ke elemen HTML yang ingin kita ubah tampilannya.
+
+      > Blok deklarasi berisi satu atau lebih deklarasi yang dipisahkan oleh tanda titik koma.
+
+      > Setiap deklarasi menyertakan nama properti CSS dan nilai, dipisahkan oleh titik dua.
+
+      > Deklarasi CSS selalu diakhiri dengan tanda titik koma, dan blok deklarasi dikelilingi oleh kurung kurawal.
+      
 
