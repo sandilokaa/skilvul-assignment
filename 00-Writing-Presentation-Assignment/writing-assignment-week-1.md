@@ -121,20 +121,6 @@ Secara singkat, Git adalah tools atau control system yang gratis dan dapat digun
     ```html
     git push origin <branch>
     ```
- - **Git Branch**
-
-    Perintah ini berguna untuk membuat branch baru ataupun melihat seluruh branch yang ada pada repository.
-
-    ```html
-    git branch <branch-name>
-    ```
- - **Git Checkout**
-
-   Perintah ini berguna untuk menukar branch yang aktif dengan branch yang dipilih.
-
-    ```html
-    git checkout <branch-name>
-    ```
 
  - **Git Clone**
 
@@ -143,3 +129,110 @@ Secara singkat, Git adalah tools atau control system yang gratis dan dapat digun
    ```html
    git clone <link-repository>
    ```
+
+## **HTML**
+
+HTML adalah singkatan dari Hypertext Markup Language yang memiliki pengertian bahasa markup standar untuk membuat dan menyusun halaman pada aplikasi website. 
+
+ - **Tag**
+   
+   Hal pertama yang dibahas adalah tag. Pengertian tag HTML adalah tanda awalan dan akhiran dalam perintah HTML yang bisa dibaca oleh web browser. Tag dibuat dengan menggunakan kurung siku terbuka dan tertutup, seperti ini <….>, di dalam kurung siku akan berisi nama tag.
+
+    * Tag untuk membuat halaman HTML yang mencakup semua konten dan elemen.
+
+      ```html
+      <html> </html>
+      ```
+
+    * Tag untuk membuat elemen HTML, mencakup tampilan deskripsi di hasil pencarian Google, style konten (CSS), dan lain sebagainya.
+
+      ```html
+      <head> </head>
+      ```
+
+    * Digunakan untuk membuat bagian isi website.
+
+      ```html
+      <body> </body>
+      ```
+
+    * Tag untuk membuat paragraf 
+
+      ```html
+      <p> </p>
+      ```
+
+    * Tag untuk membuat Heading 
+
+      ```html
+      <h1> </h1>
+      ```
+
+ - **Element**
+
+   Hal kedua adalah tentang elemen pada HTML. Elemen HTML adalah bagian yang berisi keseluruhan kode dari tag pembuka dan tag penutup. 
+
+   * Element Heading 
+
+      ```html
+      <h1> Halo guys </h1>
+      ```
+
+   * Element paragraf 
+
+      ```html
+      <p> Lorem ipsum dolor sit amet. </p>
+      ```
+
+ - **Attribute**
+
+    Atribut HTML adalah kata khusus yang berada di dalam tag pembuka. Atribut juga disebut sebagai modifier yang akan menentukan makna dari elemen.
+
+    * Attribute src  
+
+      ```html
+      <img src="/assets/images/mograh.jpg" width="300" height="auto">
+      ```
+    
+    * Attribute href  
+
+      ```html
+      <a href="https://www.markdownguide.org/basic-syntax/">Klik Link</a>
+      ```
+
+  - **Output**
+
+    Ini merupakan kerangka sederhana dari penggabungan tag, element serta attribute.
+
+    ```html
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Writing n Presentation</title>
+      </head>
+      <body>
+          
+          <h1> Halo guys </h1>
+
+          <p> Lorem ipsum dolor sit amet. </p>
+
+          <img src="/assets/images/mograh.jpg" width="300" height="auto">
+
+          <br>
+
+          <a href="https://www.markdownguide.org/basic-syntax/">Klik Link</a>
+
+      </body>
+      </html>
+    ```
+
+    Output:
+
+    ![Semantic](/assets/images/html-sederhana.png)
+
+ - **Deployment**
+
+   Proses ini dilakukan untuk membuat website/aplikasi yang telah dibuat dapat dinikmati oleh publik dengan cara melakukan deployment kedalam server. Untuk melakukan proses deployment kita dapat menggunakan salah satu web hosting yaitu netlify. 
