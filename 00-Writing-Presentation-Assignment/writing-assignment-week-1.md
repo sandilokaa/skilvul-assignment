@@ -8,22 +8,22 @@ Terminal adalah antarmuka di mana Anda dapat mengetik dan menjalankan perintah b
 
  - **Navigasi**
    
-   1. Ls (berfungsi untuk menampilkan isi dari sebuah direktori) .
-   2. Ls -la (berfungsi untuk menampilkan semua file termasuk file yang hidden).
+   1.   ls (berfungsi untuk menampilkan isi dari sebuah direktori) .
+   2.   ls -la (berfungsi untuk menampilkan semua file termasuk file yang hidden).
    
  - **File Manipulation**
    
-   1. Touch (berfungsi untuk membuah sebuah file).
+   1.   touch (berfungsi untuk membuah sebuah file).
         ```html
         touch <file-name>
         ```
 
-    2. Cp (berfungsi untuk melakukan salin pada sebuah file).
+    2.  cp (berfungsi untuk melakukan salin pada sebuah file).
         ```html
         cp <src_file> <dest_file> 
         ```
 
-    3.	Mv (berfungsi untuk memindahkan file maupun rename sebuah file).
+    3.	mv (berfungsi untuk memindahkan file maupun rename sebuah file).
         ```html
         mv <file-name> <file-name-new>
         ```
@@ -31,39 +31,39 @@ Terminal adalah antarmuka di mana Anda dapat mengetik dan menjalankan perintah b
         mv <file-name> <directory>
         ```
 
-    4.	Rm (berfungsi untuk menghapus sebuah file).
+    4.	rm (berfungsi untuk menghapus sebuah file).
         ```html
         rm <file-name>
         ```
  - **File Manipulation**
 
-    1.	Mkdir (berfungsi untuk membuat sebuah direktori baru).
+    1.  mkdir (berfungsi untuk membuat sebuah direktori baru).
         ```html
         mkdir <direction-name>
         ```
 
-    2.	Cd (berfungsi untuk melakukan masuk atau keluar dari sebuah direktori).
+    2.	cd (berfungsi untuk melakukan masuk atau keluar dari sebuah direktori).
         ```html
         cd <direction-name>
         ```
 
-    3.	Pwd (berfungsi untuk mengetahui dimana lokasi saat ini dalam menjalankan terminal).
+    3.	pwd (berfungsi untuk mengetahui dimana lokasi saat ini dalam menjalankan terminal).
         ```html
         pwd
         ```
  - **Text**
 
-    1.	Echo (untuk print sesuatu).
+    1.	echo (untuk print sesuatu).
         ```html
         echo “saya sedang belajar unix command line”
         ```
 
-    2.	Cat (untuk print sebuah file).
+    2.	cat (untuk print sebuah file).
         ```html
         cat <file-name>
         ```
 
-    3.	Nano (hampir sama dengan cat, bedanya nano dapat melakukan edit).
+    3.	nano (hampir sama dengan cat, bedanya nano dapat melakukan edit).
         ```html
         nano <file-name>
         ```
