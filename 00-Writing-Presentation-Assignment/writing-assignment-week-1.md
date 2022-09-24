@@ -236,3 +236,137 @@ HTML adalah singkatan dari Hypertext Markup Language yang memiliki pengertian ba
  - **Deployment**
 
    Proses ini dilakukan untuk membuat website/aplikasi yang telah dibuat dapat dinikmati oleh publik dengan cara melakukan deployment kedalam server. Untuk melakukan proses deployment kita dapat menggunakan salah satu web hosting yaitu netlify. 
+
+## **CSS**
+
+Dalam pengetahuan pemrograman dasar, kamu akan dikenalkan dengan HTML dan CSS. Keduanya menjadi basic yang wajib dimiliki oleh seorang programmer, terlebih bagi seorang front end developer. Lalu, apa itu CSS? CSS adalah salah satu jenis kode untuk mempercantik tampilan HTML sehingga user punya experience lebih baik pada sebuah website. 
+
+ - **Jenis CSS**
+
+   Setelah memahami fungsi CSS, kamu juga perlu tahu bahwa dalam proses implementasinya, ada 3 jenis CSS yang bisa kamu praktekkan. Setiap jenisnya memiliki fungsi, kelebihan, dan kekurangan masing-masing. 
+
+    * Inline CSS
+      
+      Jenis yang terakhir ini langsung memasukkan kode CSS yang ditulis pada setiap atribut HTML. Jadi, di setiap atribut memiliki style CSS yang berbeda sesuai kebutuhan dan ini tergolong kurang efisien jika dibanding jenis CSS lainnya.
+
+      ```html
+      <h1 style="color:blue">Halo guys</h1>
+      ```
+
+    * Internal CSS
+
+      Internal CSS adalah kode CSS yang penulisannya dalam tag style dan posisinya ada pada bagian atas header file HTML. CSS jenis ini berguna untuk membuat custom khusus dalam satu halaman website.
+
+      ```html
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>CSS</title>
+
+            <style>
+                body{
+                    background-color: aqua;
+                }
+
+                h1{
+                    color: red;
+                }
+
+                p{
+                    color: yellow;
+                }
+            </style>
+
+        </head>
+        <body>
+            
+            <h1>Halo guyss</h1>
+
+            <p>Lorem ipsum dolor sit amet.</p>
+
+        </body>
+        </html>
+      ```
+
+      Output:
+
+      ![CSS Internal](/assets/images/CSS-internal.png)
+
+
+    * Eksternal CSS
+
+      External CSS adalah kode CSS yang dituliskan terpisah dengan file HTML, dan ditulis sendiri pada file ekstensi .css. Penulisan file eksternalnya bisa diletakkan pada bagian head, jadi setiap halaman website dilakukan pemanggilan file .css. 
+
+      ```html
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+            <!-- CSS Eksternal -->
+            <link rel="stylesheet" href="styles.css" />
+
+            <title>CSS</title>
+        </head>
+        <body>
+            
+            <h1>Halo guyss</h1>
+
+            <p>Lorem ipsum dolor sit amet.</p>
+
+        </body>
+        </html>
+      ```
+
+      ```css
+
+      /* File Eksternal CSS */
+
+      body{
+        background-color: red;
+      }
+
+      h1{
+        color: white;
+      }
+
+      p{
+        color: aqua;
+      }
+      ```
+
+      Output:
+
+      ![CSS Eksternal](/assets/images/CSS-eksternal.png)
+
+    * Penjelasan Syntax CSS
+
+      Syntax css umumnya terdiri dari beberapa element yang kita sebut selektor dan deklarasi.
+
+      ```css
+      p{
+        color: aqua;
+      }
+      ```
+
+      Keterangan:
+
+      ```
+      p     : merupakan selektor,
+      color : merupakan property,
+      aqua  : merupakan value,
+
+      Selektor menunjuk ke elemen HTML yang ingin kita ubah tampilannya.
+
+      Blok deklarasi berisi satu atau lebih deklarasi yang dipisahkan oleh tanda titik koma.
+
+      Setiap deklarasi menyertakan nama properti CSS dan nilai, dipisahkan oleh titik dua.
+
+      Deklarasi CSS selalu diakhiri dengan tanda titik koma, dan blok deklarasi dikelilingi oleh kurung kurawal.
+      ```
+
