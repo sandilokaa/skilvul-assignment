@@ -94,8 +94,30 @@ Secara singkat, Git adalah tools atau control system yang gratis dan dapat digun
     git add .
     ```
 
-- **Git Status**
+ - **Git Status**
 
     Perintah ini berguna untuk mengetahui status dari repository lokal.
 
+    ```html
+    git status
+    ```
+
+    ![Git Status](/assets/images/git-status.png)
+
+ - **Git Commit**
     
+    Perintah ini berguna untuk menyimpan perubahan yang akan dilakukan, tetapi tidak ada perubahan pada remote repository karena belum di push.
+
+    ```html
+    git commit -m "message"
+    ```
+
+    ![Git Commit](/assets/images/git-commit.png)
+
+ - **Git Push**
+
+    Perintah ini guna untuk mengirimkan perubahan file setelah di commit ke repository.
+
+    ```html
+    git push origin <branch>
+    ```
