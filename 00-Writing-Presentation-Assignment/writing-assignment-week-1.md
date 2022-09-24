@@ -344,30 +344,65 @@ Dalam pengetahuan pemrograman dasar, kamu akan dikenalkan dengan HTML dan CSS. K
 
       ![CSS Eksternal](/assets/images/CSS-eksternal.png)
 
-    * Penjelasan Syntax CSS
+  - **Penjelasan Syntax CSS**
 
-      Syntax css umumnya terdiri dari beberapa element yang kita sebut selektor dan deklarasi.
+    Syntax css umumnya terdiri dari beberapa element yang kita sebut selektor dan deklarasi.
 
-      ```css
-      p{
-        color: aqua;
-      }
-      ```
+    ```css
+    p{
+      color: aqua;
+    }
+    ```
 
-      Keterangan:
+    Keterangan:
 
-      ```
-      p     : merupakan selektor,
-      color : merupakan property,
-      aqua  : merupakan value,
-      ```
+    ```
+    p     : merupakan selektor,
+    color : merupakan property,
+    aqua  : merupakan value,
+    ```
 
-      > Selektor menunjuk ke elemen HTML yang ingin kita ubah tampilannya.
+    > Selektor menunjuk ke elemen HTML yang ingin kita ubah tampilannya.
 
-      > Blok deklarasi berisi satu atau lebih deklarasi yang dipisahkan oleh tanda titik koma.
+    > Blok deklarasi berisi satu atau lebih deklarasi yang dipisahkan oleh tanda titik koma.
 
-      > Setiap deklarasi menyertakan nama properti CSS dan nilai, dipisahkan oleh titik dua.
+    > Setiap deklarasi menyertakan nama properti CSS dan nilai, dipisahkan oleh titik dua.
 
-      > Deklarasi CSS selalu diakhiri dengan tanda titik koma, dan blok deklarasi dikelilingi oleh kurung kurawal.
+    > Deklarasi CSS selalu diakhiri dengan tanda titik koma, dan blok deklarasi dikelilingi oleh kurung kurawal.
       
 
+  - **Flexbox**
+
+    Flexible Box biasa disebut flexbox merupakan mode layout yang ada di CSS3 dan digunakan untuk mengatur elemen di suatu halaman web. Flexbox ini akan mengatur ukuran dari elemen anaknya secara otomatis, dan mampu beradaptasi dengan ukuran container-nya.
+
+    * Mengapa harus flexbox?
+
+      Flexbox sangat cocok digunakan untuk komponen sebuah aplikasi dan layout skala kecil. Tujuan utama penggunaan layout flex adalah untuk memberi kemampuan container agar dapat memenipulasi item-item (elemen) yang ada didalamnya, baik itu merubah tinggi dan lebar, urutan posisi elemen, dan spasi (jarak) diantara elemen tersebut.
+
+      ```css
+      .flex-container {
+      display: flex | inline-flex;
+
+      flex-direction: row | row-reverse | column | column-reverse;
+      flex-wrap: nowrap | wrap | wrap-reverse;
+      
+      /* shorthand: Tulisan cepat/Kependekan */
+      flex-flow: <flex-direction> | <flex-wrap>;
+
+      justify-content: flex-start | flex-end | center | space-between | space-around;
+      align-items: flex-start | flex-end | center | baseline | stretch;
+      align-content: flex-start | flex-end | center | space-between | space-around | stretch;
+      }
+
+      .flex-items {
+        order: <integer>;
+
+        flex-grow: <number>; /* defaultnya adalah: 0 */
+        flex-shrink: <number>; /* defaulnya adalah: 1 - nilai negatif tidak berlaku*/
+        flex-basis: <length> | auto; /* defaultnya adalah: auto */
+        /* shorthand: Tulisan cepat/Kependekan */
+        flex: <flex-grow> | <flex-shrink> | <flex-basis> ; /* defaultnya adalah: 0 1 auto; */
+
+        align-self: auto | flex-start | flex-end | center | baseline | stretch; /* lihat: align-items */
+      }
+      ```
