@@ -518,12 +518,8 @@ Dalam pengetahuan pemrograman dasar, kamu akan dikenalkan dengan HTML dan CSS. K
       var a = 2;
 
       a += 1;
-      ```
-      
-      > Didapatkan nilai 3, karena akan menjumlahkan nilai sebelumnya.
 
-      ```javascript
-      a = a + 1
+      3
       ```
 
     * **Opeartor Perbandingan**
