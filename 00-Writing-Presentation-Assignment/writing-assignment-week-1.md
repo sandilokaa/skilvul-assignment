@@ -409,7 +409,7 @@ Dalam pengetahuan pemrograman dasar, kamu akan dikenalkan dengan HTML dan CSS. K
 
 ## **Algoritma dan Data Structure**
 
-   Apa yang dimaksud dengan algoritma? Singkatnya, algoritma dapat didefinisikan sebagai prosedur atau tahapan logis dalam memecahkan suatu masalah tertentu secara sistematis. Sedangkan struktur data adalah cara kita dalam menyimpan dan mengambil data.
+   Apa yang dimaksud dengan algoritma? Singkatnya, algoritma dapat didefinisikan sebagai prosedur atau tahapan logis dalam memecahkan suatu masalah tertentu secara sistematis. Sedangkan struktur data adalah cara penyimpanan, penyusunan dan pengaturan data di dalam media penyimpanan komputer sehingga data tersebut dapat digunakan secara efisien.
 
   - **Manfaat Algoritma**
      
@@ -447,7 +447,55 @@ Dalam pengetahuan pemrograman dasar, kamu akan dikenalkan dengan HTML dan CSS. K
     write(nama, keterangan)
     ```
 
+  - **Contoh Data Structures**
+
+    ```javascript
+    let buah = ["jeruk", "mangga", "melon", "semangka"];
+
+    delete buah[1];
+    ```
 
 ## **Javascript Basic**
 
+  JavaScript adalah bahasa pemrograman populer yang digunakan untuk membuat situs dengan konten website yang dinamis. 
+
+  - **Variable Javascript**
+
+
+
+  - **Tipe Data Populer Pada Javascript**
+
+    Javascript merupakan salah satu loosely typed language yang membuat variabelnya tidak terikat tipe data tertentu. Namun, nilai dari variabelnya lah yang memiliki tipe data tertentu.
+
     
+    > undefined => Tipe data primitive yang nilainya undefined atau tidak terdefinisikan.
+    
+    > null => Tipe data primitive yang nilainya null yang merupakan pointer untuk object yang kosong.
+
+    > number => Tipe data yang mewakili seluruh tipe data angka, seperti integer (bilangan bulat) dan floating point atau desimal.
+    
+    > string => Tipe data yang berhubungan dengan karakter.
+
+    > boolean => Tipe data yang hanya memiliki dua nilai, yakni true dan false dalam huruf kecil.
+
+    > object => Tipe data object pada Javascript merupakan tipe data kompleks yang berisi kumpulan properti (props), setiap properti berisi pasangan key:value.
+    
+
+  - **Operator Javascript**
+
+    Operator merupakan hal dasar yang harus dipahami dalam pemrograman. Karena kita akan banyak menggunakannya untuk melakukan berbagai macam operasi di dalam program.
+
+    * **Operator Aritmatika**
+
+      Operator aritmatika merupakan operator untuk melakukan operasi aritmatika seperti penjumlahan, pengurangan, pembagian, perkalian, dsb.
+
+      ```javascript
+      var a = 10;
+      var b = 15;
+
+      var c = a + b;
+
+      console.log(c);
+      ```
+
+  - **Control Flow Javascript**
