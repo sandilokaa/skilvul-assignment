@@ -406,3 +406,48 @@ Dalam pengetahuan pemrograman dasar, kamu akan dikenalkan dengan HTML dan CSS. K
         align-self: auto | flex-start | flex-end | center | baseline | stretch; /* lihat: align-items */
       }
       ```
+
+## **Algoritma dan Data Structure**
+
+   Apa yang dimaksud dengan algoritma? Singkatnya, algoritma dapat didefinisikan sebagai prosedur atau tahapan logis dalam memecahkan suatu masalah tertentu secara sistematis. Sedangkan struktur data adalah cara kita dalam menyimpan dan mengambil data.
+
+  - **Manfaat Algoritma**
+     
+     > Memecahkan program yang sulit.
+
+     > Dapat digunakan berkali-kali untuk memecahkan suatu permasalahan.
+
+     > Meminimalisir kesalahan.
+
+  - **Manfaat Data Structures**
+
+     > Memasukkan sebagian besar berkaitan dengan bagaimana data diterima. I
+
+     > Pemrosesan mendapatkan cara data dimanipulasi dalam struktur data pun dapat terjadi secara bersamaan atau sebagai hasil dari proses lain yang menangani struktur data.
+
+     > Retrieving dikhususkan untuk menemukan dan mengembalikan data yang disimpan dalam struktur.
+
+  - **Pseudocode**
+
+    Apa itu Pseudocode? Pseudocode secara harfiah berarti ‘kode semu’. Maksudnya, pseudocode adalah sebuah cara penulisan program yang informal dan dapat dibuat dengan kaidah yang ditentukan sendiri. Dengan kata lain, pseudocode merupakan urutan logika yang bertujuan untuk dipahami manusia dengan mudah.
+
+
+  - **Contoh Algoritma Sederhana Pseudocode**
+
+    ```cpp
+    Nama = string
+    Nilai = integer
+    Keterangan = string
+
+    read (nama, nilai)
+    if nilai >= 60 then
+    keterangan = ‘lulus’
+    else
+    keterangan = ‘tidak lulus’
+    write(nama, keterangan)
+    ```
+
+
+## **Javascript Basic**
+
+    
