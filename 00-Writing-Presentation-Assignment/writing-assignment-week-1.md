@@ -497,5 +497,72 @@ Dalam pengetahuan pemrograman dasar, kamu akan dikenalkan dengan HTML dan CSS. K
 
       console.log(c);
       ```
+    
+    * **Opertor Penggabungan Teks**
+
+      Pada Javascript, apabila kita akan melakukan operasi terhadap tipe data string atau teks menggunakan penjumlahan (+), maka yang akan terjadi adalah penggabungan; Bukan penjumlahan.
+
+      ```javascript
+      var result = 10 + "3";
+
+      console.log(result);
+
+      "103"
+      ```
+
+    * **Opeartor Penugasan**
+
+      Operator penugasan adalah operator yang digunakan untuk memberikan tugas kepada variabel. Biasanya digunakan untuk mengisi variabel.
+
+      ```javascript
+      var a = 2;
+
+      a += 1;
+      ```
+      
+      > Didapatkan nilai 3, karena akan menjumlahkan nilai sebelumnya.
+
+      ```javascript
+      a = a + 1
+      ```
+
+    * **Opeartor Perbandingan**
+
+      Operator relasi atau perbandingan adalah operator yang digunakan untuk membandingkan dua nilai. Dan akan menghasilkan nilai boolean.
+
+      ```javascript
+      var a = 12;
+      var b = 2;
+
+      var c = 12 < 2;
+
+      console.log(c);
+
+      "false"
+      ```
+
+    * **Opeartor Logika**
+
+      Operator logika digunakan untuk melakukan operasi terhadap dua nilai boolean.
+
+      ```javascript
+      var a = 12 > 3;
+      var b = 2 > 1;
+
+      var c = a && b;
+
+      console.log(c);
+
+      "true"
+      ```
+
+    * **Opeartor Ternary**
+
+      Opertor ternary pada Javascript, biasanya digunakan untuk membuat sebuah percabangan if/else. Simbol opertor ternary terdiri dari tanda tanya dan titik dua (?:).
+
+      ```javascript  
+      var result = conditional ? "true" : "false";
+      ```
+
 
   - **Control Flow Javascript**
