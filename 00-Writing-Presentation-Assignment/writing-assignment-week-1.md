@@ -566,3 +566,43 @@ Dalam pengetahuan pemrograman dasar, kamu akan dikenalkan dengan HTML dan CSS. K
 
 
   - **Control Flow Javascript**
+
+    Control Flow adalah mekanisme pengaturan proses berjalannya eksekusi kode program berdasarkan kondisi yang terjadi. Kita seringkali menemui percabangan di dalam program seperti :
+
+    > Jika kondisi ini bernilai true maka jalankan kode ini, jika bernilai false maka jalankan kode itu
+
+    Percabangan ini lazim terjadi karena kita membuat program yang dapat berjalan di berbagai kemungkinan kondisi yang bernilai benar (true) atau salah (false) sehingga kita perlu memahami konsep control flow ini.
+
+    * **Conditional**
+
+      ```javascript  
+      var a = 87;
+
+      if (a >= 0 && a <= 65) {
+        console.log("Nilai Kurang");
+      } else if (a >= 55 && a <= 80){
+        console.log("Nilai Cukup");
+      } else if (a >= 80 && a <= 100){
+        console.log("Nilai Sangat Cukup");
+      } else {
+        console.log("Error!");
+      }
+
+      "Nilai Sangat Cukup"
+      ```
+    
+    * **Conditional**
+
+      ```javascript  
+      var i = 0;
+
+      for (i = 0; i < 5; i++){
+        console.log(i);
+      }
+
+      0
+      1
+      2
+      3
+      4
+      ```
