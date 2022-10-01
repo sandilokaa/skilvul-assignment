@@ -1,0 +1,23 @@
+body{
+    background-color: yellow;
+}
+
+a{
+    padding: 9px 12px;
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+}
+
+.button{
+    margin-top: 40px;
+}
+
+.flex-button div{
+    background-color: red;
+}
+
+.flex-button{
+    display: flex;
+    justify-content: space-between;
+}
