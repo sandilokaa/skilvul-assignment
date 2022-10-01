@@ -166,8 +166,8 @@ JavaScript adalah bahasa pemrograman populer yang digunakan untuk membuat situs 
 
    - **DOM menemukan HTML element**
      
-     |               Method               |                 Description                |
-     |------------------------------------|:------------------------------------------:|
+     | Method                             | Description                                |
+     |------------------------------------|--------------------------------------------|
      | document.querySelector()           | Menemukan element berdasarkan selector CSS |
      | document.getElementsById()         | Menemukan element berdasarkan Id           |
      | document.getElementsByClassName()  | Menemukan element berdasarkan nama kelas   |
