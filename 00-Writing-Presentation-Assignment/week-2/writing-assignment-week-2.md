@@ -172,3 +172,49 @@ JavaScript adalah bahasa pemrograman populer yang digunakan untuk membuat situs 
      | document.getElementsById()         | Menemukan element berdasarkan Id           |
      | document.getElementsByClassName()  | Menemukan element berdasarkan nama kelas   |
      | document.getElementsByTagName      | Menemukan element berdasarkan tag          |
+
+   - **DOM CSS**
+
+     Untuk mengubah gaya elemen HTML, gunakan sintaks ini:
+
+     ```javascript
+     document.getElementById(id).style.property = new style
+     ```
+
+   - **DOM Event Listener**
+    
+     ```javascript
+     element.addEventListener(event, function, useCapture);
+     ```
+
+   - **Contoh DOM Sederhana**
+
+     Berikut contoh sederhana dari penggunaan DOM yang mencakup finding element, 
+     dan memakai event listener.
+
+     ```html
+     <h1 class="heading">Halo Guyssssss</h1>
+     <button class="btn">Click Me</button>
+     ```
+
+     ```javascript
+     const heading = document.querySelector(".heading");
+     const btn = document.querySelector(".btn");
+
+     btn.addEventListener("click", function(){
+        heading.style.backgroundColor = "red";
+     });
+     ```
+
+     **Output sebelum button di click**
+
+     ![Sebelum di Click](/assets/images/dom-before.png)
+
+     **Output sesudah button di click**
+
+     ![Sesudah di Click](/assets/images/dom-after.png)
+
+     Contoh lebih lengkap bisa di lihat di example-file.
+
+
+  
