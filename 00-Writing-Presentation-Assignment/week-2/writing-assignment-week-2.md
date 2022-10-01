@@ -152,4 +152,23 @@ JavaScript adalah bahasa pemrograman populer yang digunakan untuk membuat situs 
      ```
  - **DOM (Document Object Model)**
 
- 
+   DOM merupakan kependekan dari Document Object Model, DOM ini yakni object model standar bagi XML dan HTML yang memiliki sifat platform independent. Objek dari dokumen tersebut menyediakan sekumpulan fungsi serta data atau atribut yang dapat dimanfaatkan ketika membuat program Javascript. 
+
+   - **Manfaat penggunaan DOM**
+
+     > Dapat merubah HTML element, HTML attributes pada halaman.
+
+     > Dapat merubah style di halaman.
+
+     > Dapat menambah atau menghapus HTML element, HTML attributes.
+
+     > Dapat memberikan reaksi user terhadap peristiwa yang terjadi di halaman.
+
+   - **DOM menemukan HTML element**
+     
+     |               Method               |                 Description                |
+     |------------------------------------|:------------------------------------------:|
+     | document.querySelector()           | Menemukan element berdasarkan selector CSS |
+     | document.getElementsById()         | Menemukan element berdasarkan Id           |
+     | document.getElementsByClassName()  | Menemukan element berdasarkan nama kelas   |
+     | document.getElementsByTagName      | Menemukan element berdasarkan tag          |
