@@ -122,7 +122,6 @@ a.btn-greetings{
     font-size: 16px;
     font-weight: 600;
     border-radius: 4px;
-    width: 140px;
     text-align: center;
     transition: 0.3s ease-in-out;
 }
@@ -302,7 +301,6 @@ a.btn-about{
     font-size: 16px;
     font-weight: 600;
     border-radius: 4px;
-    width: 140px;
     text-align: center;
     transition: 0.3s ease-in-out;
 }
@@ -574,3 +572,202 @@ a.btn-about:hover{
 /* ---------- End Content 1 ---------- */
 
 /* ==================================== END PORTFOLIO PAGE ==================================== */
+
+
+/* ==================================== ARTICLE PAGE ==================================== */
+
+/* ---------- Content 1 ---------- */
+
+#banners{
+    background-image: url("../images/javscript-banner.png");
+    background-size: cover;
+    padding: 8% 0;
+}
+
+.container-banners{
+    margin: 0 6%;
+}
+
+.heading-banners h1{
+    font-size: 40px;
+    color: #fff;
+    margin-bottom: 2%;
+}
+
+.heading-banners p{
+    color: #fff;
+    margin-bottom: 4%;
+}
+
+.use-js{
+    display: block;
+}
+
+a.btn-banners{
+    padding: 9px 12px;
+    color: #fff;
+    background-color: #FF7272;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 4px;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+}
+
+a.btn-banners:hover{
+    background-color: #f94a4a;
+}
+
+/* ---------- End Content 1 ---------- */
+
+
+/* ---------- Content 2 ---------- */
+
+#articles{
+    margin: 6% 0;
+}
+
+.container-articles{
+    margin: 0 6%;
+}
+
+.title-articles h6{
+    font-size: 20px;
+    font-weight: 600;
+    color: #FF7272;
+}
+
+.title-articles h1{
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.about-articles{
+    margin-top: 6%;
+}
+
+.about-articles .card{
+    display: flex;
+}
+
+.card-articles-1{
+    box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.2);
+    width: 260px;
+    height: 340px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px 0;
+    transition: 0.2s all ease-in-out;
+}
+
+.card-articles-1 img{
+    width: 240px;
+    height: 120px;
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+}
+
+.card-articles-2{
+    margin-left: 4%;
+    box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.2);
+    width: 260px;
+    height: 340px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px 0;
+    transition: 0.2s all ease-in-out;
+}
+
+.card-articles-2 img{
+    width: 240px;
+    height: 120px;
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+}
+
+.card-articles-3{
+    margin-left: 4%;
+    box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.2);
+    width: 260px;
+    height: 340px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px 0;
+    transition: 0.2s all ease-in-out;
+}
+
+.card-articles-3 img{
+    width: 240px;
+    height: 120px;
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+}
+
+.card-articles-4{
+    margin-left: 4%;
+    box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.2);
+    width: 260px;
+    height: 340px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px 0;
+    transition: 0.2s all ease-in-out;
+}
+
+.card-articles-4 img{
+    width: 240px;
+    height: 120px;
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+}
+
+.card-description{
+    margin: 4% 0;
+    padding: 0 4%;
+}
+
+.card-description h1{
+    font-size: 20px;
+}
+
+.card-description p{
+    font-size: 14px;
+    margin: 4% 0 8%;
+}
+
+.button-read a{
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+}
+
+a.read-more{
+    padding: 9px 12px;
+    color: #fff;
+    background-color: #FF7272;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 4px;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+}
+
+a.read-more:hover{
+    background-color: #f94a4a;
+}
+
+.card-articles-1:hover,
+.card-articles-2:hover,
+.card-articles-3:hover,
+.card-articles-4:hover{
+    box-shadow: 0 0 10px 0px rgba(255, 0, 0, 0.4);
+}
+
+
+/* ---------- End Content 2 ---------- */
+
+/* ==================================== END ARTICLE PAGE ==================================== */
