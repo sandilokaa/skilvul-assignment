@@ -792,12 +792,6 @@ a.read-more:hover{
     }
 }
 
-@media screen and (min-width: 1366px) {
-    body{
-        margin: 0 2%;
-    }
-}
-
 @media screen and (min-width: 1600px) {
     body{
         margin: 0 8%;
