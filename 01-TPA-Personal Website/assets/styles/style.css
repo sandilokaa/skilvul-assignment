@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700&display=swap");
 
+/* DISARANKAN DIBUKA DI PAGE UKURAN 1360 */
+
 *{
     margin: 0;
     padding: 0;
@@ -166,6 +168,7 @@ a.btn-greetings:hover{
 .card{
     display: flex;
     margin-top: 4%;
+    justify-content: center;
 }
 
 .card-content-1{
@@ -448,6 +451,7 @@ a.btn-about:hover{
     margin: 6%;
     display: flex;
     position: relative;
+    justify-content: center;
 }
 
 .card-work-content-1{
@@ -505,6 +509,7 @@ a.btn-about:hover{
     margin: 4% 6%;
     display: flex;
     position: relative;
+    justify-content: center;
 }
 
 .card-work-content-5{
