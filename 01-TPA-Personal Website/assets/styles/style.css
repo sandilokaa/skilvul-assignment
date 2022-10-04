@@ -198,7 +198,7 @@ a.btn-greetings:hover{
     width: 320px;
     height: 340px;
     background-color: #fff;
-    margin-left: 10%;
+    margin-left: 11%;
     border-radius: 10px;
     box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
     transition: 0.2s all ease-in-out;
@@ -225,7 +225,7 @@ a.btn-greetings:hover{
     width: 320px;
     height: 340px;
     background-color: #fff;
-    margin-left: 10%;
+    margin-left: 11%;
     border-radius: 10px;
     box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
     transition: 0.2s all ease-in-out;
@@ -771,3 +771,40 @@ a.read-more:hover{
 /* ---------- End Content 2 ---------- */
 
 /* ==================================== END ARTICLE PAGE ==================================== */
+
+
+/* ==================================== RESPONSIVE DESIGN ==================================== */
+
+@media screen and (min-width: 1280px) {
+    body{
+        margin: 0 -2%;
+    }
+}
+
+@media screen and (min-width: 1360px) {
+    body{
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 1366px) {
+    body{
+        margin: 0 2%;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    body{
+        margin: 0 8%;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    body{
+        margin: 0 16%;
+    }
+}
+
+/* ==================================== END RESPONSIVE DESIGN ==================================== */
+
+
