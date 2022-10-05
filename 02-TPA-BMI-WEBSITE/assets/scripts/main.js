@@ -15,13 +15,13 @@ btnCount.addEventListener('click', function(){
 
     /* ------ Formula ------ */
 
-    const result = weight / ((height/100) ** 2);
+    const result = weight / (height/100) ** 2;
 
     console.log(result);
 
     resultCalculating.style.display = "block";
 
-    resultBMI.innerText = result;
+    resultBMI.innerText = result.toFixed(1);
 
     if (result > 30){
         resultIndicator.innerText = "Obesity"
