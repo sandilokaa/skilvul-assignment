@@ -353,3 +353,112 @@ Web Development Advance merupakan salah satu kegiatan yang ada di Skilvul. Tujua
     console.log(a);
   }
   ```
+
+## **Javascript Asynchronous**
+
+   Kode yang dituliskan secara asynchronous akan dieksekusi di belakang thread utama atau biasa disebut main thread. Hal tersebut tidak akan membloking proses runtime atau menunggu hingga proses selesai dilakukan. Sembari menunggu proses tersebut selesai, compiler akan mengeksekusi perintah kode selanjutnya.
+
+   Pada konsep asynchronous, code akan dieksekusi tanpa menunggu eksekusi code lain selesai sehingga seakan-akan dieksekusi secara bersamaan.
+
+   Kita bisa menggunakan simulasi berikut:
+
+   ```javascript
+   console.log('Hi Guys');
+
+   setTimeout(function () {
+    console.log('asynchronous');
+   }, 3000);
+
+   console.log('Hello');
+   ```
+
+**Promise**
+
+Promise bisa dikatakan sebagai object yang menyimpan hasil dari sebuah operasi asynchronous baik itu hasil yang diinginkan (resolved value) atau alasan kenapa operasi itu gagal (failure reason). Keyword yang dipakai untuk membuat Promise adalah **Promise**.
+
+```javascript
+let progress = 100;
+
+const download = new Promise((resolve, reject) => {
+  if (progress === 100) {
+    resolve('Download complete'); // resolve bila berhasil
+  } else {
+    reject('Download failed'); // reject bisa gagal
+  }
+});
+```
+
+Promise juga memiliki handler sebagai berikut.
+```javascript
+download
+  .then((result) => {
+    console.log(result); // Download complete
+  })
+  .catch((err) => {
+    console.log(err); // Download failed
+  });
+```
+
+Promise juga bisa dilakukan secara chaining dan dapat melakukan eksekusi secara pararel.
+     
+
+**Callback**
+
+Callback adalah function yang menjadi argument untuk function lain dan akan dieksekusi pada poin tertentu, bisa jadi saat ini atau nanti.
+
+```javascript
+
+const url = "https://blabla.com"
+
+const alert = () => {
+  console.log('Download complete!');
+};
+const download = (url, callback) => {
+  console.log(`Downloading from ${url} ...`);
+  callback();
+};
+
+download(url, alert);
+
+// Output
+
+("Downloading from https://blabla.com")
+("Download complete!")
+
+// alert merupakan sebuah callback function nya.
+
+```
+
+## **Javascript Local Storage**
+
+HTML DOM Window localStorage disediakan oleh Browser dan memungkinkan kita untuk menyimpan data sebagai pasangan nilai kunci di browser web kita menggunakan sebuah objek. LocalStorage adalah properti read-only dari antarmuka jendela.
+
+```javascript
+// Saving Data
+
+localStorage.setItem("name", "Sanlok Aja");
+localStorage.setItem("gender", "Male");
+
+// Updating Data
+localStorage.setItem("name", "Namira Aja");
+localStorage.setItem("gender", "Female");
+
+// Get Length Data
+const items = localStorage.length;
+console.log(items);
+
+// Remove By Key
+localStorage.removeItem("gender");
+
+// Remove All Data
+localStorage.clear();
+```
+
+Jika digabungkan dengan DOM sebagai berikut.
+
+```javascript
+document.querySelector('#getLocalStorage').addEventListener('click',function(e) {		
+	let name = localStorage.getItem("name");
+	document.querySelector("#name").innerHTML = name;
+});
+```
