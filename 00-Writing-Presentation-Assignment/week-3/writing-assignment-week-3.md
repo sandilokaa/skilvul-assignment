@@ -302,3 +302,54 @@ Web Development Advance merupakan salah satu kegiatan yang ada di Skilvul. Tujua
     console.log(person.address.city)
     ```
    
+## **Javascript Recursive**
+
+   Fungsi rekursif adalah fungsi yang memanggil dirinya sendiri sampai selesai. Dan teknik ini disebut rekursi.
+
+   ```javascript
+   function recursive() {
+    // ...
+    recursive();
+    // ...
+   }
+   ```
+
+   Fungsi rekursif selalu memiliki kondisi untuk berhenti memanggil dirinya sendiri. Jika tidak, ia akan menyebut dirinya sendiri tanpa batas. Jadi fungsi rekursif biasanya terlihat seperti berikut:
+
+   ```javascript
+   function recursive() {
+    if(conditional) {
+        // statement
+    } else {
+        recursive();
+    }
+   }
+   ```
+
+**Contoh Sederhana Recursive**
+  
+  ```javascript
+  function recursive(x){
+    if (x == 1){
+        console.log(x);
+    } else {
+        recursive(x - 1);
+        console.log(x);
+    }
+  }
+
+  recursive(4);
+  ```
+
+  **Contoh Sederhana Faktorial**
+
+  Metode Iteratif Dalam pendekatan ini, kita menggunakan perulangan for untuk melakukan iterasi pada barisan bilangan dan mendapatkan faktorial
+
+  ```javascript
+  let a = 1;
+
+  for (let i = 1; i <= 5; i++){
+    a = a * i;
+    console.log(a);
+  }
+  ```
