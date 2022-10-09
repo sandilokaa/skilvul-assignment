@@ -162,3 +162,143 @@ Web Development Advance merupakan salah satu kegiatan yang ada di Skilvul. Tujua
    ]
    ```
 
+## **Javascript Object**
+
+   Objek sebenarnya adalah sebuah variabel yang menyimpan nilai (properti) dan fungsi (method). 
+
+- **Object Literal**
+
+   ```javascript
+   const person = {
+    name: "Sandi Loka",
+    age: 21,
+    hometown: "Semarang",
+    gender: "Laki-Laki"
+   };
+
+   // how to access person object
+
+   console.log(person.name);
+   ```
+- **Method**
+
+   Selain itu bisa membuat **method** di dalam object, sebagai berikut:
+
+   ```javascript
+   const person = {
+    name: "Sandi Loka",
+    age: 21,
+    hometown: "Semarang",
+    gender: "Laki-Laki",
+    greetings: function(){
+        return(`Saya ${this.name}, umur saya ${this.age} dan saya tinggal di ${this.hometown}`);
+    }
+   };
+
+   // how to access person greetings object
+
+   console.log(person.greetings());
+
+
+   // how to change value in object
+
+   person.name = "Ananta"
+   ```
+
+- **Array of Object**
+
+   **Object** juga bisa dimasukan ke dalam sebuah **array** untuk contoh sederhana sebagai berikut:
+
+   ```javascript
+   const neighbor = [
+    {
+        name: "Sandi Loka",
+        hometown: "Semarang"
+    },
+    {
+        name: "Sanlok Aja",
+        hometown: "Surabaya"
+    }
+   ];
+
+   // how to get data per index
+
+   console.log(neighbor[1]);
+   ```
+   
+- **Iterasi**
+
+   Bisa juga menggunakan iterasi seperti forEach, map, filter, reduce dan sebagainya. Untuk contoh salah satunya sebagai berikut :
+
+   ```javascript
+   const neighbor = [
+    {
+        name: "Sandi Loka",
+        hometown: "Semarang"
+    },
+    {
+        name: "Sanlok Aja",
+        hometown: "Surabaya"
+    }
+   ];
+
+   // Map
+
+   const result = neighbor.map(e => {
+    console.log(e)
+   });
+   ```
+
+- **Object Merge**
+
+  ```javascript
+  const neighbor1 = [
+    {
+        name: "Sandi Loka",
+        hometown: "Semarang"
+    },
+    {
+        name: "Sanlok Aja",
+        hometown: "Surabaya"
+    }
+  ];
+
+  const neighbor2 = [
+    {
+        name: "Namira",
+        hometown: "Semarang"
+    },
+    {
+        name: "Namira Aja",
+        hometown: "Surabaya"
+    }
+  ];
+
+  // bisa menggunakan spread operator
+
+  const result = [...neighbor1,...neighbor2];
+
+  // Filter berdasarkan tempat lahir
+
+  const hometownResult = result.filter(e => e.hometown === "Semarang");
+
+  console.log(hometownResult);
+  ```
+
+ - **Nested Object**
+
+    ```javascript
+    const person = {
+        name: "Sandi Loka",
+        age: 21,
+        address: {
+            city: "Semarang",
+            district: "Tembalang"
+        }
+    };
+
+
+    // how to access nested object
+    console.log(person.address.city)
+    ```
+   
