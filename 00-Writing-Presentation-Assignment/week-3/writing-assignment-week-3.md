@@ -110,3 +110,55 @@ Web Development Advance merupakan salah satu kegiatan yang ada di Skilvul. Tujua
 
      ["Tesla"] //output
      ```
+
+## **Javascript Array Multidimensional**
+
+   Array multidimensi tidak langsung disediakan dalam JavaScript. Jika kita ingin menggunakan sesuatu yang bertindak sebagai array multidimensi maka kita perlu membuat array multidimensi dengan menggunakan array satu dimensi lainnya.
+
+   Contoh :
+
+   ```javascript
+   // Buat secara native
+
+   let tables = [
+        ['Play Game', 1],
+        ['Sleep', 7],
+        ['Sport', 2],
+        ['Alone', 3],
+   ];
+
+   // how to access array
+
+   console.log(tables[0][1]); // 1
+
+   // Add item with push
+
+   tables.push(['cutting',3]);
+   ```
+
+   Selain itu kita bisa melakukan pop, splice sesuai kebutuhan. Dan yang terpenting bisa melakukan looping seperti for loop, forEach, map dan sebagainya. Untuk contoh sebagai berikut:
+
+   ```javascript
+   for (let i = 0; i < tables.length; i++){
+    console.log("data: "+tables[i]);
+   }
+   ```
+
+   Kita juga bisa menambahkan sebuah array baru pada index ke 2 di setiap datanya, sebagai berikut:
+
+   ```javascript
+   tables.map(table => {
+        let percentage = ((table[1] / 10) * 100).toFixed();
+        table[2] = percentage + '%';
+   });
+
+   console.log(tables);
+
+   [
+    [ 'Play Game', 1, '10%' ],
+    [ 'Sleep', 7, '70%' ],
+    [ 'Sport', 2, '20%' ],
+    [ 'Alone', 3, '30%' ]
+   ]
+   ```
+
