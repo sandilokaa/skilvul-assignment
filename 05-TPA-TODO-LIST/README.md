@@ -10,6 +10,8 @@ Folder ini berisikan tentang pembuatan CRUD system to do list. Dimaksudkan untuk
 
 ### **Registrasi User**
 
+   ---
+
    Pada postman atur methode menjadi POST.
 
    **Example**
@@ -32,6 +34,8 @@ Folder ini berisikan tentang pembuatan CRUD system to do list. Dimaksudkan untuk
 
 ### **Login User**
 
+   ---
+
    Pada postman atur methode menjadi POST.
 
    **Example**
@@ -50,6 +54,8 @@ Folder ini berisikan tentang pembuatan CRUD system to do list. Dimaksudkan untuk
    ```
 
 ### **User Create To Do List**
+
+   ---
 
    Pada postman atur methode menjadi POST.
 
@@ -78,6 +84,8 @@ Folder ini berisikan tentang pembuatan CRUD system to do list. Dimaksudkan untuk
 
 ### **User Get All To Do List**
 
+   ---
+
    Pada postman atur methode menjadi GET.
 
    **Example**
@@ -87,6 +95,8 @@ Folder ini berisikan tentang pembuatan CRUD system to do list. Dimaksudkan untuk
    ```
 
 ### **User Get To Do List By User Id**
+
+   ---
 
    Pada postman atur methode menjadi GET.
 
@@ -119,6 +129,8 @@ Folder ini berisikan tentang pembuatan CRUD system to do list. Dimaksudkan untuk
 
 ### **User Get To Do List By Id**
 
+   ---
+
    Pada postman atur methode menjadi GET.
 
    **Example**
@@ -148,6 +160,8 @@ Folder ini berisikan tentang pembuatan CRUD system to do list. Dimaksudkan untuk
    ```
 
 ### **User Update To Do List By Id**
+
+   ---
 
    Pada postman atur methode menjadi PUT.
 
@@ -188,6 +202,8 @@ Folder ini berisikan tentang pembuatan CRUD system to do list. Dimaksudkan untuk
 
 ### **User Delete To Do List By Id**
 
+   ---
+
    Pada postman atur methode menjadi DELETE.
 
    **Example**
@@ -218,6 +234,8 @@ Folder ini berisikan tentang pembuatan CRUD system to do list. Dimaksudkan untuk
 
 ### **User Delete All To Do List By User Id**
 
+   ---
+
    Pada postman atur methode menjadi DELETE.
 
    **Example**
@@ -247,6 +265,8 @@ Folder ini berisikan tentang pembuatan CRUD system to do list. Dimaksudkan untuk
    ```
 
 ### **User Delete All To Do List (Truncate)**
+
+   ---
 
    Pada postman atur methode menjadi DELETE.
 
