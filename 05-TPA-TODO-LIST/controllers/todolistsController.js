@@ -5,12 +5,12 @@ const todolistsService = require("../services/todolistsService");
 
 const handleCreateToDoList = async(req, res, next) => {
 
-    const user_id = req.user.id;
+    const userId = req.user.id;
 
     const { activity, description, activityDate, activityTime } = req.body;
 
     const { status, status_code, message, data} = await todolistsService.handleCreateToDoList({
-        user_id,
+        userId,
         activity,
         description,
         activityDate,
@@ -88,13 +88,13 @@ const handleUpdateToDoListById = async(req, res, next) => {
 
     const { id } = req.params;
 
-    const user_id = req.user.id;
+    const userId = req.user.id;
 
     const { activity, description, activityDate, activityTime } = req.body;
 
     const { status, status_code, message, data} = await todolistsService.handleUpdateToDoListById({ 
         id, 
-        user_id,
+        userId,
         activity,
         description,
         activityDate,
@@ -118,9 +118,9 @@ const handleDeleteToDoListById = async(req, res, next) => {
 
     const { id } = req.params;
 
-    const user_id = req.user.id;
+    const userId = req.user.id;
 
-    const { status, status_code, message, data} = await todolistsService.handleDeleteToDoListById({ id, user_id });
+    const { status, status_code, message, data} = await todolistsService.handleDeleteToDoListById({ id, userId });
 
     res.status(status_code).send({
         status: status,
@@ -138,9 +138,9 @@ const handleDeleteToDoListByUserId = async(req, res, next) => {
 
     const { id } = req.params;
 
-    const user_id = req.user.id;
+    const userId = req.user.id;
 
-    const { status, status_code, message, data} = await todolistsService.handleDeleteToDoListByUserId({ id, user_id });
+    const { status, status_code, message, data} = await todolistsService.handleDeleteToDoListByUserId({ id, userId });
 
     res.status(status_code).send({
         status: status,

@@ -13,13 +13,13 @@ module.exports = (sequelize, DataTypes) => {
       // define association here
 
       todo_lists.belongsTo(models.users, {
-        foreignKey: "user_id"
+        foreignKey: "userId"
       });
 
     }
   }
   todo_lists.init({
-    user_id: DataTypes.INTEGER,
+    userId: DataTypes.INTEGER,
     activity: DataTypes.TEXT,
     description: DataTypes.TEXT,
     activityDate: DataTypes.DATEONLY,

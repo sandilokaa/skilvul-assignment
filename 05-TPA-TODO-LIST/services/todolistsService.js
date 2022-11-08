@@ -5,7 +5,7 @@ class todolistService {
 
     /* --------------- Handle Create To Do List --------------- */
 
-    static async handleCreateToDoList({ user_id, activity, description, activityDate, activityTime }) {
+    static async handleCreateToDoList({ userId, activity, description, activityDate, activityTime }) {
 
         try {
 
@@ -34,7 +34,7 @@ class todolistService {
             }
 
             const createdToDoList = await todolistsRepository.handleCreateToDoList({
-                user_id,
+                userId,
                 activity,
                 description,
                 activityDate,
@@ -167,13 +167,13 @@ class todolistService {
 
     /* --------------- Handle Update To Do Lists By Id --------------- */
 
-    static async handleUpdateToDoListById({ id, user_id, activity, description, activityDate, activityTime }) {
+    static async handleUpdateToDoListById({ id, userId, activity, description, activityDate, activityTime }) {
 
         try {
 
             const getToDoListById = await todolistsRepository.handleGetToDoListById({ id });
 
-            if (getToDoListById.user_id == user_id) {
+            if (getToDoListById.userId == userId) {
 
                 const updatedToDoList = await todolistsRepository.handleUpdateToDoListById({
                     id,
@@ -221,13 +221,13 @@ class todolistService {
 
     /* --------------- Handle Delete To Do Lists By Id --------------- */
 
-    static async handleDeleteToDoListById({ id, user_id }) {
+    static async handleDeleteToDoListById({ id, userId }) {
 
         try {
 
             const getToDoListById = await todolistsRepository.handleGetToDoListById({ id });
 
-            if (getToDoListById.user_id == user_id) {
+            if (getToDoListById.userId == userId) {
 
                 const deletedToDoList = await todolistsRepository.handleDeleteToDoListById({ id });
 
@@ -269,7 +269,7 @@ class todolistService {
 
     /* --------------- Handle Delete To Do Lists By User Id --------------- */
 
-    static async handleDeleteToDoListByUserId({ id, user_id }) {
+    static async handleDeleteToDoListByUserId({ id, userId }) {
 
         try {
 

@@ -5,10 +5,10 @@ class todolistsRepository {
 
     /* --------------- Handle Create To Do List --------------- */
 
-    static async handleCreateToDoList({ user_id, activity, description, activityDate, activityTime }) {
+    static async handleCreateToDoList({ userId, activity, description, activityDate, activityTime }) {
 
         const createdToDoList = await todo_lists.create({
-            user_id,
+            userId,
             activity,
             description,
             activityDate,
@@ -25,7 +25,15 @@ class todolistsRepository {
 
     static async handleGetAllToDoLists() {
 
-        const getAllToDoLists = await todo_lists.findAll();
+        const query = {
+            where: {},
+            include: [{
+                model: users,
+                attributes: ["name", "email"]
+            }]
+        };
+
+        const getAllToDoLists = await todo_lists.findAll(query);
 
         return getAllToDoLists;
     };
@@ -37,9 +45,19 @@ class todolistsRepository {
 
     static async handleGetToDoListByUserId({ id }) {
 
-        const getToDoListByUserId = await todo_lists.findAll({
-            where: { user_id: id }
-        });
+        const query = {
+            where: {},
+            include: [{
+                model: todo_lists,
+                attributes: ["activity", "description", "activityDate", "activityTime"]
+            }]
+        };
+
+        if (id) {
+            query.where = { ...query.where, id }
+        }
+
+        const getToDoListByUserId = await users.findAll(query);
 
         return getToDoListByUserId;
     };
@@ -51,9 +69,19 @@ class todolistsRepository {
 
     static async handleGetToDoListById({ id }) {
 
-        const getToDoListByUserId = await todo_lists.findOne({
-            where: { id }
-        });
+        const query = {
+            where: {},
+            include: [{
+                model: users,
+                attributes: ["name", "email"]
+            }]
+        };
+
+        if (id) {
+            query.where = { ...query.where, id }
+        }
+
+        const getToDoListByUserId = await todo_lists.findOne(query);
 
         return getToDoListByUserId;
     };
@@ -102,7 +130,7 @@ class todolistsRepository {
         const deletedToDoList = await todo_lists.destroy({
             where: 
             { 
-                user_id: id
+                userId: id
             }
         });
 
