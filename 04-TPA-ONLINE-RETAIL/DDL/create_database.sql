@@ -1,0 +1,1 @@
+create database skilvul_online_retail;
