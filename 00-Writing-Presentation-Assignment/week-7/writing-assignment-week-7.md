@@ -1,4 +1,4 @@
-# **Rangkuman Backend Bootcamp Week-2**
+# **Rangkuman Backend Bootcamp Week-3**
 
 Backend Bootcamp merupakan salah satu kegiatan yang ada di Skilvul. Tujuannya untuk berbagi ilmu mengenai apa saja yang dibutuhkan dalam pembuatan sebuah server, database serta business logic.
 
